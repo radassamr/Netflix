@@ -132,35 +132,41 @@
     <!-- FILME 1 -->
     <ImageView
         android:id="@+id/filme1"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
         android:src="@drawable/rookie"
         android:scaleType="centerCrop"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
         android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@id/textLancamentos"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/filme2"
+        app:layout_constraintHorizontal_chainStyle="spread" />
 
     <!-- FILME 2 -->
     <ImageView
         android:id="@+id/filme2"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
         android:src="@drawable/designated"
         android:scaleType="centerCrop"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintTop_toTopOf="@id/filme1"
-        app:layout_constraintStart_toEndOf="@id/filme1"/>
+        app:layout_constraintStart_toEndOf="@id/filme1"
+        app:layout_constraintEnd_toStartOf="@id/filme3" />
 
     <!-- FILME 3 -->
     <ImageView
         android:id="@+id/filme3"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
         android:src="@drawable/dexter"
         android:scaleType="centerCrop"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintTop_toTopOf="@id/filme1"
-        app:layout_constraintStart_toEndOf="@id/filme2"/>
-
+        app:layout_constraintStart_toEndOf="@id/filme2"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
